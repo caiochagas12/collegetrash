@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B5F100E-2D1F-4703-8187-322E011F43D7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>cadastrousuario</RootNamespace>
+    <AssemblyName>cadastrousuario</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>cadastrousuario.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\Desktop\CircularFormDemo\CircularFormDemo\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADD-USER.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ADD-USER.Designer.cs">
+      <DependentUpon>ADD-USER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addclient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addclient.Designer.cs">
+      <DependentUpon>addclient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD-CLIENTES.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ADD-CLIENTES.Designer.cs">
+      <DependentUpon>ADD-CLIENTES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SEARCH-CLIENTES.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SEARCH-CLIENTES.Designer.cs">
+      <DependentUpon>SEARCH-CLIENTES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LIST-CLIENTE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LIST-CLIENTE.Designer.cs">
+      <DependentUpon>LIST-CLIENTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LIST-USERS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LIST-USERS.Designer.cs">
+      <DependentUpon>LIST-USERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listerClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listerClient.Designer.cs">
+      <DependentUpon>listerClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAINEL_ADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAINEL_ADM.Designer.cs">
+      <DependentUpon>PAINEL_ADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="painelUSUARIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="painelUSUARIO.Designer.cs">
+      <DependentUpon>painelUSUARIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SEARCH-USER.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SEARCH-USER.Designer.cs">
+      <DependentUpon>SEARCH-USER.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADD-USER.resx">
+      <DependentUpon>ADD-USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addclient.resx">
+      <DependentUpon>addclient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD-CLIENTES.resx">
+      <DependentUpon>ADD-CLIENTES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SEARCH-CLIENTES.resx">
+      <DependentUpon>SEARCH-CLIENTES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIST-CLIENTE.resx">
+      <DependentUpon>LIST-CLIENTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIST-USERS.resx">
+      <DependentUpon>LIST-USERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listerClient.resx">
+      <DependentUpon>listerClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAINEL_ADM.resx">
+      <DependentUpon>PAINEL_ADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="painelUSUARIO.resx">
+      <DependentUpon>painelUSUARIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SEARCH-USER.resx">
+      <DependentUpon>SEARCH-USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ico.ico" />
+    <None Include="Resources\DATATECH.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
