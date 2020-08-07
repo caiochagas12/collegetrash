@@ -1,2 +1,2 @@
 # givemeajogbplease
-College stuffs, projects and a lot of practice to become the 'Tony Stark' of programming
+Projetos da faculdade, prática de novas tecnologias e muito aprendizado 
